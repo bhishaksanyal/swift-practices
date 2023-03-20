@@ -21,6 +21,7 @@
 		DB22BFB929C8A7B000C953B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB22BFBC29C8A7B000C953B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB22BFBE29C8A7B000C953B4 /* ChatGPTToolbarApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatGPTToolbarApp.entitlements; sourceTree = "<group>"; };
+		DBC4DA7D29C8B2F80017EC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		DB22BFB429C8A7B000C953B4 /* ChatGPTToolbarApp */ = {
 			isa = PBXGroup;
 			children = (
+				DBC4DA7D29C8B2F80017EC32 /* Info.plist */,
 				DB22BFB529C8A7B000C953B4 /* ChatGPTToolbarAppApp.swift */,
 				DB22BFB729C8A7B000C953B4 /* ContentView.swift */,
 				DB22BFB929C8A7B000C953B4 /* Assets.xcassets */,
@@ -282,6 +284,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatGPTToolbarApp/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +313,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatGPTToolbarApp/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
