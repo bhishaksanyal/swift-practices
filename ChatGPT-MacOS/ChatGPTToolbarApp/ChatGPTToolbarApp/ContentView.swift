@@ -19,6 +19,21 @@ struct ContentView: View {
         !search.isEmpty
     }
     
+    private func performSearch() {
+        responses.append("You: \(search)")
+        
+        openAI.sendCompletion(with: search,maxTokens: 500) { result in
+            switch result {
+                case .success(let success):
+                    let response = "ChatGPT: \(success.choices.first?.text ?? "No Data")"
+                    responses.append(response)
+                    search = ""
+                case .failure(let failure):
+                    print(failure.localizedDescription)
+            }
+        }
+    }
+    
     var body: some View {
         VStack {
             HStack {
@@ -26,12 +41,16 @@ struct ContentView: View {
                     .textFieldStyle(.roundedBorder)
                 
                 Button {
-                    // action
+                    performSearch()
                 } label: {
                     Image(systemName: "magnifyingglass.circle.fill")
                         .font(.title)
                 }.buttonStyle(.borderless)
                     .disabled(!isFormValid)
+            }
+            
+            List(responses, id: \.self) { response in
+                Text(response)
             }
         }
         .padding()
