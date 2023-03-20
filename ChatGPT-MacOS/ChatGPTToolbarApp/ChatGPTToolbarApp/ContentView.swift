@@ -6,14 +6,33 @@
 //
 
 import SwiftUI
+import OpenAISwift
 
 struct ContentView: View {
+    
+    @State private var search: String = ""
+    
+    let openAI = OpenAISwift(authToken: "")
+    @State private var responses: [String] = []
+    
+    private var isFormValid: Bool {
+        !search.isEmpty
+    }
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            HStack {
+                TextField("search...", text: $search)
+                    .textFieldStyle(.roundedBorder)
+                
+                Button {
+                    // action
+                } label: {
+                    Image(systemName: "magnifyingglass.circle.fill")
+                        .font(.title)
+                }.buttonStyle(.borderless)
+                    .disabled(!isFormValid)
+            }
         }
         .padding()
     }
