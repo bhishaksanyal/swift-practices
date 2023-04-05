@@ -12,7 +12,7 @@ struct ContentView: View {
     
     @State private var search: String = ""
     
-    let openAI = OpenAISwift(authToken: "")
+    let openAI = OpenAISwift(authToken: "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")
     @State private var responses: [String] = []
     
     private var isFormValid: Bool {
