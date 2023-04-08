@@ -9,13 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List() {
+            PersonCardView(person: John)
+                .listRowSeparator(.hidden)
+            
+            PersonCardView(person: Emily)
+                .listRowSeparator(.hidden)
+            
+            PersonCardView(person: Clark)
+                .listRowSeparator(.hidden)
         }
-        .padding()
+        .listStyle(.plain)
     }
 }
 

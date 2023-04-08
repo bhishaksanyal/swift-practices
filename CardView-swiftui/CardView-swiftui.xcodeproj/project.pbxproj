@@ -11,6 +11,8 @@
 		DBB3A35129DDAF9A000C2094 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB3A35029DDAF9A000C2094 /* ContentView.swift */; };
 		DBB3A35329DDAF9A000C2094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB3A35229DDAF9A000C2094 /* Assets.xcassets */; };
 		DBB3A35629DDAF9A000C2094 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB3A35529DDAF9A000C2094 /* Preview Assets.xcassets */; };
+		DBB3A35D29E04B7C000C2094 /* PersonCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB3A35C29E04B7C000C2094 /* PersonCardView.swift */; };
+		DBB3A35F29E04B98000C2094 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB3A35E29E04B98000C2094 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		DBB3A35029DDAF9A000C2094 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DBB3A35229DDAF9A000C2094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBB3A35529DDAF9A000C2094 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DBB3A35C29E04B7C000C2094 /* PersonCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCardView.swift; sourceTree = "<group>"; };
+		DBB3A35E29E04B98000C2094 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				DBB3A34E29DDAF9A000C2094 /* CardView_swiftuiApp.swift */,
 				DBB3A35029DDAF9A000C2094 /* ContentView.swift */,
+				DBB3A35C29E04B7C000C2094 /* PersonCardView.swift */,
+				DBB3A35E29E04B98000C2094 /* Person.swift */,
 				DBB3A35229DDAF9A000C2094 /* Assets.xcassets */,
 				DBB3A35429DDAF9A000C2094 /* Preview Content */,
 			);
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBB3A35129DDAF9A000C2094 /* ContentView.swift in Sources */,
+				DBB3A35D29E04B7C000C2094 /* PersonCardView.swift in Sources */,
+				DBB3A35F29E04B98000C2094 /* Person.swift in Sources */,
 				DBB3A34F29DDAF9A000C2094 /* CardView_swiftuiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
