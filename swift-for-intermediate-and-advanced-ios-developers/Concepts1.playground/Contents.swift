@@ -103,3 +103,18 @@ print(stackString.elements)
 stackString.pop()
 
 print(stackString.elements)
+
+/**
+ Constraints on generic types
+ */
+
+struct Customer: Encodable {
+    var name: String
+}
+
+func encode<T: Encodable>(_ item: T) throws {
+    try JSONEncoder().encode(item)
+}
+
+let customer = Customer(name: "Bhishak Sanyal")
+try? encode(customer)
