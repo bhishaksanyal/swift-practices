@@ -40,3 +40,15 @@ if let city = person.address?.city {
 //print(person.address?.city ?? "No city")
 
 
+// Force unwrap
+let url: URL? = URL(string: "https://www.google.com/maps")!
+
+// Optional mapping and flat mapping
+let mapStr: String? = "Bhishak Sanyal"
+let result = mapStr.map { $0.count }
+//print(result)
+
+let flatmapResult = mapStr.flatMap { $0.count }
+//print(flatmapResult)
+
+
