@@ -27,8 +27,7 @@ struct LandmarkRow: View {
 }
 
 #Preview {
-    Group {
+//    Group {
         LandmarkRow(landmark: landmarks[0])
-        LandmarkRow(landmark: landmarks[1])
-    }
+//    }
 }
