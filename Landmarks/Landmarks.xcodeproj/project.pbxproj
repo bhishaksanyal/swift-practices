@@ -67,12 +67,12 @@
 		DB05265729E5C5B70098629F /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
+				DB05265829E5C5B70098629F /* LandmarksApp.swift */,
+				DB3674052B1CB86D00B114EE /* Views */,
 				DB3674062B1CB87B00B114EE /* Model */,
 				DB3674072B1CB88700B114EE /* Resources */,
-				DB3674052B1CB86D00B114EE /* Views */,
-				DB05265E29E5C5B70098629F /* Preview Content */,
-				DB05265829E5C5B70098629F /* LandmarksApp.swift */,
 				DB05265C29E5C5B70098629F /* Assets.xcassets */,
+				DB05265E29E5C5B70098629F /* Preview Content */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
