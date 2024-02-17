@@ -88,8 +88,8 @@
 		DB3674052B1CB86D00B114EE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DB3673FB2B1B664500B114EE /* CircleImage.swift */,
 				DB05265A29E5C5B70098629F /* ContentView.swift */,
+				DB3673FB2B1B664500B114EE /* CircleImage.swift */,
 				DB3673FD2B1B67BE00B114EE /* MapView.swift */,
 				DB3674082B1CC53500B114EE /* LandmarkRow.swift */,
 				DB21F97D2B1CD1FC00D97AE5 /* LandmarkList.swift */,
