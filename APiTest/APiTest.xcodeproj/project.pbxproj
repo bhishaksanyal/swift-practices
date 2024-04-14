@@ -16,6 +16,7 @@
 		DBACC6432BCABB150071C820 /* APiTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBACC6422BCABB150071C820 /* APiTestTests.swift */; };
 		DBACC64D2BCABB150071C820 /* APiTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBACC64C2BCABB150071C820 /* APiTestUITests.swift */; };
 		DBACC64F2BCABB150071C820 /* APiTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBACC64E2BCABB150071C820 /* APiTestUITestsLaunchTests.swift */; };
+		DBACC65D2BCAD5880071C820 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBACC65C2BCAD5880071C820 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DBACC6482BCABB150071C820 /* APiTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APiTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBACC64C2BCABB150071C820 /* APiTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APiTestUITests.swift; sourceTree = "<group>"; };
 		DBACC64E2BCABB150071C820 /* APiTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APiTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DBACC65C2BCAD5880071C820 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		DBACC62A2BCABB130071C820 /* APiTest */ = {
 			isa = PBXGroup;
 			children = (
+				DBACC65B2BCAD5500071C820 /* Network */,
 				DBACC62B2BCABB130071C820 /* AppDelegate.swift */,
 				DBACC62D2BCABB130071C820 /* SceneDelegate.swift */,
 				DBACC62F2BCABB130071C820 /* ViewController.swift */,
@@ -125,6 +128,14 @@
 				DBACC64E2BCABB150071C820 /* APiTestUITestsLaunchTests.swift */,
 			);
 			path = APiTestUITests;
+			sourceTree = "<group>";
+		};
+		DBACC65B2BCAD5500071C820 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DBACC65C2BCAD5880071C820 /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBACC65D2BCAD5880071C820 /* NetworkManager.swift in Sources */,
 				DBACC6302BCABB130071C820 /* ViewController.swift in Sources */,
 				DBACC62C2BCABB130071C820 /* AppDelegate.swift in Sources */,
 				DBACC62E2BCABB130071C820 /* SceneDelegate.swift in Sources */,
