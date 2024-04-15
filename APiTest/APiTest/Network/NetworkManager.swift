@@ -11,10 +11,6 @@ import OSLog
 
 let BASE_URL = "https://streaming-availability.p.rapidapi.com/"
 
-func log(_ value: Any,_ key: String = "") {
-    print("\n \(key)-----> \n\(value) \n")
-}
-
 struct APIError: Error, Codable {
     var statusCode: Int?
     let message: String?

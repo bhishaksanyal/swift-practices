@@ -17,6 +17,9 @@
 		DBACC64D2BCABB150071C820 /* APiTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBACC64C2BCABB150071C820 /* APiTestUITests.swift */; };
 		DBACC64F2BCABB150071C820 /* APiTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBACC64E2BCABB150071C820 /* APiTestUITestsLaunchTests.swift */; };
 		DBACC65D2BCAD5880071C820 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBACC65C2BCAD5880071C820 /* NetworkManager.swift */; };
+		DBACC6602BCD61EE0071C820 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = DBACC65F2BCD61EE0071C820 /* countries.json */; };
+		DBACC6632BCD91900071C820 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBACC6622BCD91900071C820 /* Common.swift */; };
+		DBACC6662BCD990F0071C820 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBACC6652BCD990F0071C820 /* Country.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		DBACC64C2BCABB150071C820 /* APiTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APiTestUITests.swift; sourceTree = "<group>"; };
 		DBACC64E2BCABB150071C820 /* APiTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APiTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DBACC65C2BCAD5880071C820 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DBACC65F2BCD61EE0071C820 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		DBACC6622BCD91900071C820 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		DBACC6652BCD990F0071C820 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 		DBACC62A2BCABB130071C820 /* APiTest */ = {
 			isa = PBXGroup;
 			children = (
+				DBACC6642BCD98C90071C820 /* Model */,
+				DBACC6612BCD91760071C820 /* Common */,
+				DBACC65E2BCD61480071C820 /* Data */,
 				DBACC65B2BCAD5500071C820 /* Network */,
 				DBACC62B2BCABB130071C820 /* AppDelegate.swift */,
 				DBACC62D2BCABB130071C820 /* SceneDelegate.swift */,
@@ -136,6 +145,30 @@
 				DBACC65C2BCAD5880071C820 /* NetworkManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		DBACC65E2BCD61480071C820 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DBACC65F2BCD61EE0071C820 /* countries.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DBACC6612BCD91760071C820 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DBACC6622BCD91900071C820 /* Common.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DBACC6642BCD98C90071C820 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBACC6652BCD990F0071C820 /* Country.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +277,7 @@
 			files = (
 				DBACC6352BCABB150071C820 /* Assets.xcassets in Resources */,
 				DBACC6382BCABB150071C820 /* Base in Resources */,
+				DBACC6602BCD61EE0071C820 /* countries.json in Resources */,
 				DBACC6332BCABB130071C820 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +306,8 @@
 				DBACC65D2BCAD5880071C820 /* NetworkManager.swift in Sources */,
 				DBACC6302BCABB130071C820 /* ViewController.swift in Sources */,
 				DBACC62C2BCABB130071C820 /* AppDelegate.swift in Sources */,
+				DBACC6632BCD91900071C820 /* Common.swift in Sources */,
+				DBACC6662BCD990F0071C820 /* Country.swift in Sources */,
 				DBACC62E2BCABB130071C820 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

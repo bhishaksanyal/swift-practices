@@ -13,17 +13,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let network = NetworkManager()
+//        let network = NetworkManager()
+//        
+//        Task {
+//            do {
+//                let ( data, error ) = try await network.fetchData(urlType: .getCountries)
+//                print("DATA ====== \(String(describing: data ?? nil))")
+//                print("CODE ====== \(error?.statusCode ?? 0)\n")
+//                print("MESSAGE ====== \(error?.message ?? "nothing")\n")
+//            } catch {
+//                print("Error", error)
+//            }
+//        }
         
-        Task {
-            do {
-                let result: APIError = try await network.fetchData(urlType: .getCountries)
-                print("CODE ====== \(result.statusCode ?? 0)\n")
-                print("MESSAGE ====== \(result.message ?? "nothing")\n")
-            } catch {
-                print("Error", error)
-            }
-        }
+        readCountriesJSONFile()
     }
     
     
