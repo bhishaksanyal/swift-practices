@@ -20,7 +20,10 @@ func readCountriesJSONFile() {
              Decoding using JSONDecoder()
              */
             let country = try JSONDecoder().decode(CountryResult.self, from: jsonData)
-            log(country.result)
+//            log(country.result)
+            let contryResult = country.result
+            log(contryResult["ae"] ?? "")
+            
             
             
             /*
