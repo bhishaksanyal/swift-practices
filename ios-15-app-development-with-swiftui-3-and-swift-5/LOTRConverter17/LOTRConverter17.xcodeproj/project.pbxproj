@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB31D91A2BE4040B00D04BC1 /* LOTRConverter17App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB31D9192BE4040B00D04BC1 /* LOTRConverter17App.swift */; };
-		DB31D91C2BE4040B00D04BC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB31D91B2BE4040B00D04BC1 /* ContentView.swift */; };
+		DB31D91C2BE4040B00D04BC1 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB31D91B2BE4040B00D04BC1 /* AppView.swift */; };
 		DB31D91E2BE4040C00D04BC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB31D91D2BE4040C00D04BC1 /* Assets.xcassets */; };
 		DB31D9212BE4040C00D04BC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB31D9202BE4040C00D04BC1 /* Preview Assets.xcassets */; };
 		DB31D92B2BE4040C00D04BC1 /* LOTRConverter17Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB31D92A2BE4040C00D04BC1 /* LOTRConverter17Tests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		DB31D9162BE4040B00D04BC1 /* LOTRConverter17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOTRConverter17.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB31D9192BE4040B00D04BC1 /* LOTRConverter17App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOTRConverter17App.swift; sourceTree = "<group>"; };
-		DB31D91B2BE4040B00D04BC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB31D91B2BE4040B00D04BC1 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		DB31D91D2BE4040C00D04BC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB31D9202BE4040C00D04BC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB31D9262BE4040C00D04BC1 /* LOTRConverter17Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LOTRConverter17Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,8 +94,10 @@
 		DB31D9182BE4040B00D04BC1 /* LOTRConverter17 */ = {
 			isa = PBXGroup;
 			children = (
+				DB31D9452BF12DEF00D04BC1 /* ViewModels */,
+				DB31D9442BF12DDB00D04BC1 /* Models */,
+				DB31D9432BF12DCF00D04BC1 /* Views */,
 				DB31D9192BE4040B00D04BC1 /* LOTRConverter17App.swift */,
-				DB31D91B2BE4040B00D04BC1 /* ContentView.swift */,
 				DB31D91D2BE4040C00D04BC1 /* Assets.xcassets */,
 				DB31D91F2BE4040C00D04BC1 /* Preview Content */,
 			);
@@ -125,6 +127,36 @@
 				DB31D9362BE4040C00D04BC1 /* LOTRConverter17UITestsLaunchTests.swift */,
 			);
 			path = LOTRConverter17UITests;
+			sourceTree = "<group>";
+		};
+		DB31D9432BF12DCF00D04BC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB31D9462BF25B1000D04BC1 /* Components */,
+				DB31D91B2BE4040B00D04BC1 /* AppView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB31D9442BF12DDB00D04BC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB31D9452BF12DEF00D04BC1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DB31D9462BF25B1000D04BC1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB31D91C2BE4040B00D04BC1 /* ContentView.swift in Sources */,
+				DB31D91C2BE4040B00D04BC1 /* AppView.swift in Sources */,
 				DB31D91A2BE4040B00D04BC1 /* LOTRConverter17App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
