@@ -14,6 +14,8 @@
 		DB31D92B2BE4040C00D04BC1 /* LOTRConverter17Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB31D92A2BE4040C00D04BC1 /* LOTRConverter17Tests.swift */; };
 		DB31D9352BE4040C00D04BC1 /* LOTRConverter17UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB31D9342BE4040C00D04BC1 /* LOTRConverter17UITests.swift */; };
 		DB31D9372BE4040C00D04BC1 /* LOTRConverter17UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB31D9362BE4040C00D04BC1 /* LOTRConverter17UITestsLaunchTests.swift */; };
+		DB31D9482BF25CF400D04BC1 /* ExchangeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB31D9472BF25CF400D04BC1 /* ExchangeInfo.swift */; };
+		DB31D94A2BF260A100D04BC1 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB31D9492BF260A100D04BC1 /* ExchangeRate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		DB31D9302BE4040C00D04BC1 /* LOTRConverter17UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LOTRConverter17UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB31D9342BE4040C00D04BC1 /* LOTRConverter17UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOTRConverter17UITests.swift; sourceTree = "<group>"; };
 		DB31D9362BE4040C00D04BC1 /* LOTRConverter17UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOTRConverter17UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB31D9472BF25CF400D04BC1 /* ExchangeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeInfo.swift; sourceTree = "<group>"; };
+		DB31D9492BF260A100D04BC1 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,7 @@
 			children = (
 				DB31D9462BF25B1000D04BC1 /* Components */,
 				DB31D91B2BE4040B00D04BC1 /* AppView.swift */,
+				DB31D9472BF25CF400D04BC1 /* ExchangeInfo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 		DB31D9462BF25B1000D04BC1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DB31D9492BF260A100D04BC1 /* ExchangeRate.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -289,6 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB31D94A2BF260A100D04BC1 /* ExchangeRate.swift in Sources */,
+				DB31D9482BF25CF400D04BC1 /* ExchangeInfo.swift in Sources */,
 				DB31D91C2BE4040B00D04BC1 /* AppView.swift in Sources */,
 				DB31D91A2BE4040B00D04BC1 /* LOTRConverter17App.swift in Sources */,
 			);
