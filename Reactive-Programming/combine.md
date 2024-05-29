@@ -249,3 +249,60 @@ textPublisher.send("F")
 textPublisher.send("G")
 textPublisher.send("H")
 ```
+
+###### CombineLatest - Combine results of multiple publishers and sink with a common subscriber
+
+```
+let publisher1 = CurrentValueSubject<Int, Never>(1)
+let publisher2 = CurrentValueSubject<String, Never>("Hey")
+
+let combined = publisher1.combineLatest(publisher2)
+
+combined.sink { value1, value2 in
+    print("Value 1: \(value1) and Value 2: \(value2)")
+}
+
+publisher1.send(2)
+publisher2.send("Combine")
+
+Output:
+Value 1: 1 and Value 2: Hey
+Value 1: 2 and Value 2: Hey
+Value 1: 2 and Value 2: Combine
+```
+
+###### Zip - Combine multiple value streams, ignores extra values in any publisher
+
+```
+let zPub1 = [1,2,3,4].publisher
+let zPub2 = ["A","B","C"].publisher
+
+//let zippedPublisher = zPub1.zip(zPub2)
+
+let zippedPublisher = Publishers.Zip(zPub1, zPub2)
+
+zippedPublisher.sink { val1, val2 in
+    print("\(val1)/ \(val2)")
+}
+```
+
+###### SwitchToLatest - Switch publishers
+
+```
+let outerPublisher = PassthroughSubject<AnyPublisher<Int, Never>, Never>()
+let innerPublisher1 = CurrentValueSubject<Int, Never>(1)
+let innerPublisher2 = CurrentValueSubject<Int, Never>(2)
+
+outerPublisher
+    .switchToLatest()
+    .sink { value in
+        print(value)
+}
+
+outerPublisher.send(AnyPublisher(innerPublisher1))
+innerPublisher1.send(10)
+
+outerPublisher.send(AnyPublisher(innerPublisher2))
+innerPublisher2.send(20)
+innerPublisher2.send(100)
+```
