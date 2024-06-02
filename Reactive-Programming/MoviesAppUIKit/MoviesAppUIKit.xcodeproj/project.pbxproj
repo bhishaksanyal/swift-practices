@@ -14,6 +14,7 @@
 		8D5F40762AD83DFA0058B14B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5F40742AD83DFA0058B14B /* LaunchScreen.storyboard */; };
 		8D5F407F2AD841470058B14B /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5F407E2AD841470058B14B /* MoviesViewController.swift */; };
 		DB191A862C0CAAD300F8C11F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB191A852C0CAAD300F8C11F /* Movie.swift */; };
+		DB191A882C0CABA100F8C11F /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB191A872C0CABA100F8C11F /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8D5F40772AD83DFA0058B14B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D5F407E2AD841470058B14B /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		DB191A852C0CAAD300F8C11F /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		DB191A872C0CABA100F8C11F /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		8D5F40832AD859FF0058B14B /* Clients */ = {
 			isa = PBXGroup;
 			children = (
+				DB191A872C0CABA100F8C11F /* HTTPClient.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			files = (
 				8D5F407F2AD841470058B14B /* MoviesViewController.swift in Sources */,
 				8D2FCF682AD8804700DB9E71 /* String+Extensions.swift in Sources */,
+				DB191A882C0CABA100F8C11F /* HTTPClient.swift in Sources */,
 				8D5F406A2AD83DF90058B14B /* AppDelegate.swift in Sources */,
 				8D5F406C2AD83DF90058B14B /* SceneDelegate.swift in Sources */,
 				DB191A862C0CAAD300F8C11F /* Movie.swift in Sources */,
