@@ -51,6 +51,14 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Product.swift,
+				StoreModel.swift,
+			);
+			target = DB65744A2C1EE9F800CB2E98 /* MVExample */;
+		};
+		DB65747F2C1EEB4500CB2E98 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Webservice.swift,
 			);
 			target = DB65744A2C1EE9F800CB2E98 /* MVExample */;
 		};
@@ -58,7 +66,7 @@
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DB6574782C1EEA4F00CB2E98 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (DB65747C2C1EEA7400CB2E98 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
-		DB6574792C1EEA5C00CB2E98 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
+		DB6574792C1EEA5C00CB2E98 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (DB65747F2C1EEB4500CB2E98 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
