@@ -11,6 +11,9 @@ struct ContentView: View {
     
     @EnvironmentObject private var storeModel: StoreModel
     
+    private let width = UIScreen.main.bounds.width
+    private let itemWidth = (UIScreen.main.bounds.width / 2)
+    
     private func populateProducts() async {
         do {
             try await storeModel.populateProducts()
@@ -23,16 +26,36 @@ struct ContentView: View {
         
         ScrollView {
             LazyVGrid(columns: [
-                GridItem(.adaptive(minimum: 200)),
-                GridItem(.adaptive(minimum: 200))
+                GridItem(.adaptive(minimum: itemWidth)),
+                GridItem(.adaptive(minimum: itemWidth))
             ]) {
                 ForEach(storeModel.products, id: \.id) { product in
-                    Text(String(product.rating.rate))
-                        .frame(width: 180, height: 150, alignment: .center)
-                        .background(.blue)
-                        .cornerRadius(10)
-                        .foregroundColor(.white)
-                        .font(.title)
+                    
+                    VStack {
+                        VStack (alignment: .leading) {
+                            AsyncImage(url: URL(string: product.image)) { image in
+                                image
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                            } placeholder: {
+                                ProgressView()
+                            }
+                            
+                            Text(product.title)
+                                .bold()
+                                .font(.title3)
+                            
+                            Text(product.description)
+                                .bold()
+                                .font(.caption)
+                        }
+                        .padding(5)
+                        
+                    }
+                    .background(Color(.white))
+                    .cornerRadius(10)
+                    .shadow(radius: 2)
+                    .padding(5)
                 }
             }
         }.task {
